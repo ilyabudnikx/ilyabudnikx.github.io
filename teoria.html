@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        .scale {
+            transition: 1s; /* Время эффекта */
+        }
+        .scale:hover {
+            transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+        .bloggood-ru-div
+        {
+            display: none;
+        }
+        .bloggood-ru-ssilka{
+            color: blue;
+        }
+        a.bloggood-ru-ssilka:hover+div
+        {
+            display: block;
+        }
+        .image {
+            overflow:hidden;
+            width: 380px;
+            height:250px;
+            padding-left: 150px
+        } .image1 {
+              overflow:hidden;
+              width: 380px;
+              height:150px;
+              padding-left: 150px
+          }
+    </style>
+</head>
+<body>
+<nav class="container py-2 bg-light border-bottom justify-content-center">
+    <div class="container d-flex flex-wrap justify-content-center" >
+        <ul class="container nav justify-content-center" >
+            <li class="nav-item"><a class="nav-link link-dark px-2 active" aria-current="page">+375-(29)-23-54-697</a></li>
+            <li class="nav-item"><a class="nav-link link-dark px-2 ">ilyabudnikxs@gmail.com</a></li>
+            <li class="nav-item"><a class="nav-link link-dark px-2">Будник Илья Витальевич</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link link-dark" aria-current="page" style="font-size: 30px">Изучение работы двигателя Стирлинга</a></li>
+        </ul>
+    </header>
+</div>
+
+<header class="container p-3 bg-dark text-white ">
+    <div class="container ">
+        <div class="d-flex flex-wrap justify-content-center">
+            <ul class="nav col-12  me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 text-white">Главная страница</a></li>
+                <li><a href="teoria.html" class="nav-link px-2 text-secondary">Теоретические сведения</a></li>
+                <li><a href="_HTML5%20Canvas.html" class="nav-link px-2 text-white">Структура установки</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Симулятор установки</a></li>
+                <li><a href="about.html" class="nav-link px-2 text-white">О себе</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <!-- Post content-->
+            <article>
+                <!-- Post header-->
+                <header class="mb-4">
+                    <!-- Post title-->
+                    <h1 class="fw-bolder mb-1">Что такое двигатель Стирлинга?</h1>
+                    <!-- Post meta content-->
+                    <div class="text-muted fst-italic mb-2">Posted on October 7, 2021</div>
+                    <!-- Post categories-->
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Engine</a>
+                    <a class="badge bg-secondary text-decoration-none link-light" href="#!">Stirling</a>
+                </header>
+                <!-- Preview image figure-->
+                <figure class="mb-4"><img class="img-fluid rounded scale" src="teor1.png" alt="..." style="filter: brightness(90%);"></figure>
+                <!-- Post content-->
+                <section class="mb-5">
+                    <p class="fs-5 mb-4">Двигатель Стирлинга - это особый тип "теплового двигателя", который преобразует небольшую разницу температур в движение; иногда их называют "воздушно-горячими" или "калорическими" двигателями.</p>
+
+                    <h2 class="fw-bolder mb-4 mt-5">Как работает низкотемпературный двигатель Стирлинга из алюминия или нержавеющей стали?</h2>
+                    <p class="fs-5 mb-4">Все двигатели Стирлинга работают за счет разницы температур. В наших низкотемпературных двигателях из алюминия и нержавеющей стали эта разница обычно достигается за счет нагрева нижней пластины до температуры выше комнатной, а верхняя пластина остается при комнатной температуре.</p>
+                    <p class="fs-5 mb-4">В процессе работы двигатель циклически нагревает и охлаждает воздух внутри. Этот процесс показан на упрощенных схемах ниже (нужно помнить, что большой синий диск вытеснителя просто перемещает (вытесняет) воздух сверху вниз и обратно, а маленький черный поршень приводит в движение маховик).</p>
+
+                    <h2 class="fw-bolder mb-4 mt-5">Регресивность</h2>
+                    <p class="fs-5 mb-4">ВВсе двигатели Стирлинга полностью обратимы. В низкотемпературном диапазоне Kontax это означает, что вместо нагрева нижней пластины и охлаждения верхней пластины для получения вращения по часовой стрелке, вы можете охладить нижнюю пластину и нагреть верхнюю пластину для получения вращения против часовой стрелки.</p>
+                    <p class="fs-5 mb-4">Самый простой способ получить вращение вперед (по часовой стрелке) - это взять двигатель в ладонь, дать нижней пластине нагреться до температуры вашей руки и осторожно раскрутить маховик по часовой стрелке. Если ваша рука достаточно теплая (а температура окружающей среды в помещении достаточно прохладная), двигатель должен продолжать работать под действием собственной силы (до тех пор, пока вы держите его на руке). Если у вас очень холодная рука, а температура окружающей среды в помещении очень теплая, разница температур между верхней и нижней пластинами может оказаться недостаточной для работы двигателя.</p>
+                    <p class="fs-5 mb-4">Самый простой способ получить обратное (против часовой стрелки) вращение - поместить двигатель над миской или блюдцем со льдом, дать нижней пластине охладиться до температуры ниже комнатной и осторожно раскрутить маховик против часовой стрелки. Как и при обычном ручном управлении, двигатель должен продолжать работать на своей собственной мощности до тех пор, пока лед не растает и не нагреется до комнатной температуры. Работа на льду очень надежна, поскольку разница температур между льдом и температурой окружающей среды в помещении обычно больше, чем между нагревом от руки и температурой окружающей среды в помещении.</p>
+                    <h2 class="fw-bolder mb-4 mt-5">Процесс со стороны физики</h2>
+                    <p class="fs-5 mb-4">Из термодинамики известно, что давление, температура и объём идеального газа взаимосвязаны и следуют закону <img src="https://wikimedia.org/api/rest_v1/media/math/render/svg/57c364f7f0b47178cfd35c3bbaf6dcb22a98cf44" class="mwe-math-fallback-image-inline scale" aria-hidden="true" style="vertical-align: -0.671ex; margin-left: -0.089ex; width:10.94ex; height:2.509ex;" alt="{\displaystyle pV=nRT}">, где:</p>
+                    <p class="fs-5 mb-2">p — давление газа;</p>
+                    <p class="fs-5 mb-2">V — объём газа;</p>
+
+                    <p class="fs-5 mb-2">n — количество газа;</p>
+                    <p class="fs-5 mb-2">R — универсальная газовая постоянная;</p>
+
+                    <p class="fs-5 mb-4">Т — температура газа в кельвинах.</p>
+                    <p class="fs-5 mb-4">Это означает, что при нагревании газа его объём увеличивается, а при охлаждении — уменьшается. При нагревании газ совершает работу (например, толкает поршень) и охлаждается. Сжать охлажденный газ проще, чем удержать расширяющийся горячий (на сжатие холодного газа «расходуется» меньше работы, чем высвобождается работы при нагревании и расширении того же самого газа). Это свойство газов и лежит в основе работы двигателя Стирлинга.</p>
+                    <p class="fs-5 mb-4">Двигатель Стирлинга использует цикл Стирлинга, который по термодинамической эффективности не уступает циклу Карно, и даже обладает преимуществом. Дело в том, что цикл Карно состоит из мало различающихся между собой изотерм и адиабат. Практическое воплощение этого цикла малоперспективно. Цикл Стирлинга позволил получить работающий на практике двигатель в приемлемых размерах.</p>
+
+
+                    <p class="fs-5 mb-4">Цикл Стирлинга состоит из четырёх фаз и разделён двумя переходными фазами: нагрев, расширение, переход к источнику холода, охлаждение, сжатие и переход к источнику тепла. Таким образом, при переходе от тёплого источника к холодному источнику происходит расширение и сжатие газа, находящегося в цилиндре. При этом изменяется давление, за счёт чего можно получить полезную работу.</p>
+                    <p class="fs-5 mb-4">Нагрев и охлаждение рабочего тела (участки 4 и 2) производятся регенератором. В идеале количество тепла, отдаваемое и отбираемое регенератором, одинаково. Полезная работа производится только за счёт изотерм, то есть зависит от разницы температур нагревателя и охладителя, как в цикле Карно </a></p>
+                    <u> <a href="#" class="bloggood-ru-ssilka">Адиабата <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-down" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"/>
+                    </svg></a>
+                        <div class="bloggood-ru-div"><img src="adi.png"></div></u>
+
+
+                </section>
+
+
+            </article>
+            <!-- Comments section-->
+
+        </div>
+        <!-- Side widgets-->
+        <div class="col-lg-4">
+            <!-- Search widget-->
+            <!-- Categories widget-->
+            <div class="card mb-4">
+                <div class="card-header">Дополнительные статьи</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%A1%D1%82%D0%B8%D1%80%D0%BB%D0%B8%D0%BD%D0%B3%D0%B0">Wikipedia</a></li>
+                                <li><a href="https://electrosam.ru/glavnaja/jelektrooborudovanie/jelektropitanie/dvigatel-stirlinga/">Electrosam</a></li>
+                                <li><a href="http://tm.spbstu.ru/%D0%94%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%A1%D1%82%D0%B8%D1%80%D0%BB%D0%B8%D0%BD%D0%B3%D0%B0(%D0%94%D0%B2%D0%B8%D0%B3%D0%B0%D1%82%D0%B5%D0%BB%D1%8C_%D0%B2%D0%BD%D0%B5%D1%88%D0%BD%D0%B5%D0%B3%D0%BE_%D1%81%D0%B3%D0%BE%D1%80%D0%B0%D0%BD%D0%B8%D1%8F)">SPBSTU</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="https://habr.com/ru/post/402793/">Habr</a></li>
+                                <li><a href="https://brstu.ru/static/unit/journal_smt/docs/number-44/49-53.pdf">BRSTU</a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="container text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+
+
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+
+
+
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Используемые страницы
+                    </h6>
+                    <p>
+                        <a href="index.html" class="text-reset">Главная страница</a>
+                    </p>
+                    <p>
+                        <a href="teoria.html" class="text-reset">Теоретические сведения</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Структура установки</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Симулятор установки</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-reset">О себе</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Контакты
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i>Беларусь, улица Свердлова, 13А</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        ilyabudnikxs@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 375 29 23 54 697</p>
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://github.com/ilyabudnikx">github.com/ilyabudnikx</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>

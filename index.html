@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Main Page</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <style>
+        .scale {
+            transition: 1s; /* Время эффекта */
+        }
+        .scale:hover {
+            transform: scale(1.2); /* Увеличиваем масштаб */
+        }
+    </style>
+</head>
+<body>
+<nav class="container py-2 bg-light border-bottom justify-content-center">
+    <div class="container d-flex flex-wrap justify-content-center" >
+        <ul class="container nav justify-content-center" >
+            <li class="nav-item"><a class="nav-link link-dark px-2 active" aria-current="page">+375-(29)-23-54-697</a></li>
+            <li class="nav-item"><a class="nav-link link-dark px-2">ilyabudnikxs@gmail.com</a></li>
+            <li class="nav-item"><a class="nav-link link-dark px-2">Будник Илья Витальевич</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <header class="d-flex justify-content-center py-3">
+        <ul class="nav nav-pills">
+            <li class="nav-item"><a class="nav-link link-dark" aria-current="page" style="font-size: 30px">Изучение работы двигателя Стирлинга</a></li>
+        </ul>
+    </header>
+</div>
+
+<header class="container p-3 bg-dark text-white ">
+    <div class="container ">
+        <div class="d-flex flex-wrap justify-content-center">
+            <ul class="nav col-12  me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="index.html" class="nav-link px-2 text-secondary">Главная страница</a></li>
+                <li><a href="teoria.html" class="nav-link px-2 text-white">Теоретические сведения</a></li>
+                <li><a href="_HTML5%20Canvas.html" class="nav-link px-2 text-white">Структура установки</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Симулятор установки</a></li>
+                <li><a href="about.html" class="nav-link px-2 text-white">О себе</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<!--Carousel Wrapper-->
+<div id="video-carousel-example2" class="container carousel slide carousel-fade mt-2 justify-content-center" data-ride="carousel" >
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+        <li data-target="#video-carousel-example2" data-slide-to="0" class="active"></li>
+        <li data-target="#video-carousel-example2" data-slide-to="1"></li>
+        <li data-target="#video-carousel-example2" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+    <!--Slides-->
+    <div class="carousel-inner " role="listbox" style="height: 400px;">
+        <!-- First slide -->
+        <div class="carousel-item active" >
+            <!--Mask color-->
+            <div class="view">
+                <!--Video source-->
+                <img src="123123123.png" style="filter: brightness(60%)">
+                <div class="mask rgba-indigo-light"></div>
+            </div>
+
+            <!--Caption-->
+            <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                    <h3 class="h3-responsive">Конструкция исполнения "Альфа"</h3>
+                </div>
+            </div>
+            <!--Caption-->
+        </div>
+        <!-- /.First slide -->
+
+        <!-- Second slide -->
+        <div class="carousel-item">
+            <!--Mask color-->
+            <div class="view">
+                <!--Video source-->
+
+                    <img src="adasd.png" style="filter: brightness(60%)">
+
+                <div class="mask rgba-purple-slight"></div>
+            </div>
+
+            <!--Caption-->
+            <div class="carousel-caption">
+                <div class="animated fadeInDown">
+                    <h3 class="h3-responsive">Конструкция исполнения "Гамма"</h3>
+                </div>
+            </div>
+            <!--Caption-->
+        </div>
+        <!-- /.Second slide -->
+
+    </div>
+    <!--/.Slides-->
+    <!--Controls-->
+    <a class="carousel-control-prev" href="#video-carousel-example2" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#video-carousel-example2" role="button" data-slide="next">
+        <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+
+    </a>
+    <!--/.Controls-->
+</div>
+<!--Carousel Wrapper-->
+<div class="container mt-2">
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="DSt-3.jpg" data-holder-rendered="true">
+                <div class="card-body">
+                    <h3 class="card-text">Конструкция исполнения "Альфа"</h3>
+                    <p class="card-text">Этот двигатель включает в себя два отдельных рабочих поршня. Каждый поршень расположен в отдельном цилиндре. Холодный цилиндр находится в теплообменнике, а горячий нагревается.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="DSt-4.jpg" data-holder-rendered="true">
+
+                <div class="card-body">
+                    <h3 class="card-text">Конструкция исполнения "Бетта"</h3>
+                    <p class="card-text">Цилиндр с поршнем охлаждается с одной стороны, и нагревается с противоположной стороны. В цилиндре перемещается силовой поршень и вытеснитель, служащий для уменьшения и увеличения объема рабочего газа. Регенератор выполняет обратное перемещение остывшего газа в нагретое пространство двигателя.</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+
+                <img class="card-img-top" style="height: 225px; width: 100%; display: block;" src="DSt-5.jpg" data-holder-rendered="true">                <div class="card-body">
+                <h3 class="card-text">Конструкция исполнения "Гамма"</h3>
+                <p class="card-text">Вся система состоит из двух цилиндров. Первый цилиндр весь холодный. В нем перемещается рабочий поршень, Второй цилиндр с одной стороны нагретый, а с другой – холодный, и предназначен для передвижения вытеснителя. Регенератор для перекачки охлажденного газа может являться общим для двух цилиндров, либо может быть включен в устройство вытеснителя.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2 border-bottom">Технические характеристики</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-fullscreen" viewBox="0 0 16 16">
+                    <path d="M1.5 1a.5.5 0 0 0-.5.5v4a.5.5 0 0 1-1 0v-4A1.5 1.5 0 0 1 1.5 0h4a.5.5 0 0 1 0 1h-4zM10 .5a.5.5 0 0 1 .5-.5h4A1.5 1.5 0 0 1 16 1.5v4a.5.5 0 0 1-1 0v-4a.5.5 0 0 0-.5-.5h-4a.5.5 0 0 1-.5-.5zM.5 10a.5.5 0 0 1 .5.5v4a.5.5 0 0 0 .5.5h4a.5.5 0 0 1 0 1h-4A1.5 1.5 0 0 1 0 14.5v-4a.5.5 0 0 1 .5-.5zm15 0a.5.5 0 0 1 .5.5v4a1.5 1.5 0 0 1-1.5 1.5h-4a.5.5 0 0 1 0-1h4a.5.5 0 0 0 .5-.5v-4a.5.5 0 0 1 .5-.5z"/>
+                </svg>
+            </div>
+            <div>
+                <h2>Размер</h2>
+                <p>83мм x 50мм x 115мм</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-bootstrap-reboot " viewBox="0 0 16 16">
+                <path d="M1.161 8a6.84 6.84 0 1 0 6.842-6.84.58.58 0 1 1 0-1.16 8 8 0 1 1-6.556 3.412l-.663-.577a.58.58 0 0 1 .227-.997l2.52-.69a.58.58 0 0 1 .728.633l-.332 2.592a.58.58 0 0 1-.956.364l-.643-.56A6.812 6.812 0 0 0 1.16 8z"/>
+                <path d="M6.641 11.671V8.843h1.57l1.498 2.828h1.314L9.377 8.665c.897-.3 1.427-1.106 1.427-2.1 0-1.37-.943-2.246-2.456-2.246H5.5v7.352h1.141zm0-3.75V5.277h1.57c.881 0 1.416.499 1.416 1.32 0 .84-.504 1.324-1.386 1.324h-1.6z"/>
+            </svg>
+            <div>
+                <h2 style="margin: 0px 0px 0px 15px ;">Частота оборотов</h2>
+                <p style="margin: 0px 0px 0px 15px ;"> 1600 - 2000rpm</p>
+
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                    <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z"/>
+                </svg>
+            </div>
+            <div>
+                <h2>Вес</h2>
+                <p>126 гр.</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-ui-checks-grid" viewBox="0 0 16 16">
+                    <path d="M2 10h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1zm9-9h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-3a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm0 9a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-3zm0-10a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2h-3zM2 9a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h3a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H2zm7 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2h-3a2 2 0 0 1-2-2v-3zM0 2a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.354.854a.5.5 0 1 0-.708-.708L3 3.793l-.646-.647a.5.5 0 1 0-.708.708l1 1a.5.5 0 0 0 .708 0l2-2z"/>
+                </svg>
+            </div>
+            <div>
+                <h2>Тип двигателя</h2>
+                <p>Конструкция исполнения "Гамма"</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-thermometer-half" viewBox="0 0 16 16">
+                    <path d="M9.5 12.5a1.5 1.5 0 1 1-2-1.415V6.5a.5.5 0 0 1 1 0v4.585a1.5 1.5 0 0 1 1 1.415z"/>
+                    <path d="M5.5 2.5a2.5 2.5 0 0 1 5 0v7.55a3.5 3.5 0 1 1-5 0V2.5zM8 1a1.5 1.5 0 0 0-1.5 1.5v7.987l-.167.15a2.5 2.5 0 1 0 3.333 0l-.166-.15V2.5A1.5 1.5 0 0 0 8 1z"/>
+                </svg>
+            </div>
+            <div>
+                <h2>Рабочая температура</h2>
+                <p>200℃</p>
+            </div>
+        </div>
+        <div class="col d-flex align-items-start">
+            <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-layers-half" viewBox="0 0 16 16">
+                    <path d="M8.235 1.559a.5.5 0 0 0-.47 0l-7.5 4a.5.5 0 0 0 0 .882L3.188 8 .264 9.559a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882L12.813 8l2.922-1.559a.5.5 0 0 0 0-.882l-7.5-4zM8 9.433 1.562 6 8 2.567 14.438 6 8 9.433z"/>
+                </svg>
+            </div>
+            <div>
+                <h2>Материалы</h2>
+                <p>Cтекло, латунь, нержавеющая сталь, алюминий
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="container text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section
+            class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+    >
+
+
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+
+
+
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Используемые страницы
+                    </h6>
+                    <p>
+                        <a href="index.html" class="text-reset">Главная страница</a>
+                    </p>
+                    <p>
+                        <a href="teoria.html" class="text-reset">Теоретические сведения</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Структура установки</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Симулятор установки</a>
+                    </p>
+                    <p>
+                        <a href="about.html" class="text-reset">О себе</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Контакты
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i>Беларусь, улица Свердлова, 13А</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        ilyabudnikxs@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 375 29 23 54 697</p>
+
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://github.com/ilyabudnikx">github.com/ilyabudnikx</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
+</body>
+</html>
