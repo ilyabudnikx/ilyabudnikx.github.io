@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="KnowledgeBase.js"></script>
     <style>
         .scale {
             transition: 1s; /* Время эффекта */
@@ -37,6 +38,169 @@
               height:150px;
               padding-left: 150px
           }
+
+
+
+
+        A:Hover{ background-color: white; text-decoration: underline; color:  #111d43; }
+        A:Active { color: red; text-decoration: underline; }
+
+        #content {
+            height: 85%;
+            background-color: #f5f5f5;
+            justify-content: center;
+            align-items: center;
+            overflow: scroll;
+            overflow-x: hidden;
+            z-index: 99999;
+        }
+
+        #content .Title {
+            padding: 10px;
+            text-align: center;
+            font-size: 4vh;
+            color: #12214a;
+            font-weight: bold;
+        }
+
+        #content .text {
+            padding-left: 20px;
+            padding-right: 10px;
+            font-size: 3vh;
+            color: black;
+            text-align: stretch;
+        }
+        #OpenButton{
+            border:1px solid #6c757d;
+            border-radius: 3px;
+            color: white;
+            background-color: #6c757d;
+            font-size: 20px;
+            position: fixed;
+            right: 30px;
+            bottom: 70px;
+            z-index: 9999999;
+            padding: 10px;
+        }
+
+        #Helper{
+            visibility: hidden;
+            position: fixed;
+            right: 20px;
+            bottom: 10vh;
+            width: 17vw;
+            height: 54vh;
+            z-index: 999999;
+        }
+
+        #HelperHeader{
+            color:white;
+            background-color: #6c757d;
+            height: 7vh;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #CloseButton{
+            position: absolute;
+            right: 0;
+            height:5vh;
+        }
+        #HelperBody{
+            background-color: white;
+            height: 40vh;
+            border: 1px solid #6c757d;
+            color: black;
+        }
+
+        #HelperBottom{
+            background-color: #6c757d;
+            height: 7vh;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Chat{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #Chat input{
+            font-size: 2vh;
+            border:1px solid white;
+            border-radius: 5px;
+            border: none;
+            margin: 2px;
+            height: 5vh;
+            width: 12vw;
+        }
+        #Chat img{
+            position: absolute;
+            right: 4.5vw;
+            height: 4vh;
+        }
+        #EnterButton{
+            border:2px solid white;
+            color:white;
+            border-radius: 5px;
+            background-color: transparent;
+            font-size: 2vh;
+            height: 5vh;
+            width: 3.5vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 3px;
+        }
+
+        #HelperBody{
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+        }
+        .question{
+            margin: 3px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+
+        }
+        .answer{
+            margin: 3px;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .question div{
+            padding: 5px;
+            width:70%;
+            border-radius: 5px;
+            background-color: #6ebcd0;
+
+        }
+        .answer div{
+            padding: 5px;
+            width:70%;
+            border-radius: 5px;
+
+            background-color: #b2ee72;
+
+        }
+        .answer div img{
+            width: 100%;
+        }
+        .answer div embed{
+            width: 100%;
+        }
+        .answer audio{
+            width: 100%;
+            height: 30px;
+        }
     </style>
 </head>
 <body>
@@ -71,6 +235,27 @@
         </div>
     </div>
 </header>
+
+<div id="content" class="container">
+    <div id="OpenButton" onclick="Open()">Задать вопрос</div>
+    <div id="Helper">
+        <div id="HelperHeader">
+            <div>Задать вопрос</div>
+            <img onclick="Close()" id="CloseButton" src="1636312553_6-papik-pro-p-krest-stiker-7.png" style="height: 30px; margin: 20px">
+        </div>
+        <div id="HelperBody">
+        </div>
+        <div id="HelperBottom">
+            <div id="Chat">
+                <input id="input_string" type="text" name="TextInput" placeholder="Введите вопрос" style="">
+                <img src="26706.png" id="MicIcon" onclick="speech()" style ="height: 30px">
+            </div>
+            <div id="EnterButton">
+                <div onclick="findIntelAnswer()">Найти</div>
+            </div>
+        </div>
+    </div>
+
 
 
 <div class="container mt-5">
